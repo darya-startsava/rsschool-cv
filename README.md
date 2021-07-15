@@ -1,1 +1,1 @@
-https://github.com/darya-startsava/rsschool-cv/blob/gh-pages/cv.md
+https://darya-startsava.github.io/rsschool-cv/cv
