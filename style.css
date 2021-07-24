@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.photo {
+  float: right;
+  margin: -2px 10px 20px 0;
+}
+
+.alignment-all {
+  margin: 0 auto;
+  width: 800px;
+  background-color: #eee;
+  padding: 0 10px 20px 10px;
+}
+
+.color {
+  background-color: #aaa;
+  margin: 0 -10px;
+  padding: 10px 0 1px 10px;
+}
+
+.alignment-footer {
+  text-align: center;
+}
