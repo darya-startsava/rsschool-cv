@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.photo {
+  float: right;
+  margin: -2px 10px 20px 0;
+  width: 190px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 800px;
+  background-color: #eee;
+  padding: 0 10px 20px 10px;
+}
+
+.header {
+  background-color: #aaa;
+  margin: 0 -10px;
+  padding: 10px 0 1px 10px;
+}
+
+.footer {
+  text-align: center;
+}
+
+footer img {
+  width: 50px;
+}
