@@ -1,25 +1,133 @@
-body {
-  font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@media screen and (min-width: 768px) {
+  .header,
+  .main-part {
+    flex-direction: row;
+  }
+
+  .main-part aside {
+    flex-basis: 40%;
+  }
+
+  .main-part div {
+    flex-basis: 60%;
+  }
+
+  .photo {
+    width: 200px;
+  }
+
+  .photo-project {
+    width: 300px;
+  }
+
+  code {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header,
+  .main-part {
+    flex-direction: column;
+    font-size: 2em;
+  }
+
+  .photo {
+    width: 300px;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project {
+    margin: auto;
+  }
+
+  .photo-project {
+    width: 500px;
+  }
+
+  code {
+    font-size: 0.7em;
+  }
+
+  h3 {
+    text-align: center;
+  }
+}
+
+html {
+  font-family: Roboto, sans-serif;
 }
 
 .photo {
-  float: right;
-  margin: -2px 10px 20px 0;
+  border-radius: 50%;
 }
 
-.alignment-all {
+.content {
   margin: 0 auto;
   width: 800px;
-  background-color: #eee;
-  padding: 0 10px 20px 10px;
+  background-color: #ffffff;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
 }
 
-.color {
-  background-color: #aaa;
-  margin: 0 -10px;
-  padding: 10px 0 1px 10px;
+.header {
+  background-color: #fca311;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin: -1px;
 }
 
-.alignment-footer {
+.title-text {
+  margin: auto;
+}
+
+.main-part {
+  display: flex;
+  padding: 10px;
+}
+
+.main-part div {
+  justify-self: center;
+}
+
+.main-right {
+  padding-left: 5px;
+}
+
+pre {
+  margin: 0;
+}
+
+.projects {
+  display: flex;
+}
+
+.project {
+  padding: 5px;
+}
+
+h4 {
   text-align: center;
+  margin: 2px 0 0 0;
 }
+.project-description {
+    margin: 2px 0 0 0;
+}
+
+.footer {
+  text-align: center;
+  background-color: #e5e5e5;
+  margin: -1px;
+  padding: 10px 0;
+}
+
+footer img {
+  width: 50px;
+}
+
