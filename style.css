@@ -17,6 +17,14 @@
   .photo {
     width: 200px;
   }
+
+  .photo-project {
+    width: 300px;
+  }
+
+  code {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -28,6 +36,26 @@
 
   .photo {
     width: 300px;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project {
+    margin: auto;
+  }
+
+  .photo-project {
+    width: 500px;
+  }
+
+  code {
+    font-size: 0.7em;
+  }
+
+  h3 {
+    text-align: center;
   }
 }
 
@@ -42,7 +70,7 @@ html {
 .content {
   margin: 0 auto;
   width: 800px;
-  background-color:#ffffff;
+  background-color: #ffffff;
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
 }
@@ -68,12 +96,28 @@ html {
   justify-self: center;
 }
 
-code {
-    font-size: 0.9em;
+.main-right {
+  padding-left: 5px;
 }
 
 pre {
-    margin: 0;
+  margin: 0;
+}
+
+.projects {
+  display: flex;
+}
+
+.project {
+  padding: 5px;
+}
+
+h4 {
+  text-align: center;
+  margin: 2px 0 0 0;
+}
+.project-description {
+    margin: 2px 0 0 0;
 }
 
 .footer {
