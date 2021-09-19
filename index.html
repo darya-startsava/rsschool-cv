@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darya Startsava CV</title>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/vs.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
@@ -29,72 +31,85 @@
                 </section>
             </div>
         </header>
-        <main>
-            <section>
-                <h3>About me</h3>
-                <p>
-                    Hi, I'm Darya. I am a self-taught front-end developer.
-                    I practice writing clean and elegant code.
-                </p>
-            </section>
-            <section>
-                <h3>Education</h3>
-                <p>
-                    Rolling Scopes School<br>
-                    Course "JavaScript/Front-end"<br>
-                    2021
-                </p>
-                <p>
-                    Belarusian State University<br>
-                    Faculty of Chemistry<br>
-                    2005-2010
-                </p>
-            </section>
-            <section>
-                <h3>Skills</h3>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>HTML 5</li>
-                    <li>CSS 3</li>
-                    <li>Git</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Languages</h3>
-                <ul>
-                    <li>Russian: native</li>
-                    <li>English: A2</li>
-                    <li>Polish: A2</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Sample code</h3>
-                <pre>
+        <main class="main-part">
+            <aside>
+                <section>
+                    <h3>About me</h3>
+                    <p>
+                        Hi, I'm Darya. I am a self-taught front-end developer.
+                        I practice writing clean and elegant code.
+                    </p>
+                </section>
+                <section>
+                    <h3>Education</h3>
+                    <p>
+                        Rolling Scopes School<br>
+                        Course "JavaScript/Front-end"<br>
+                        2021
+                    </p>
+                    <p>
+                        Belarusian State University<br>
+                        Faculty of Chemistry<br>
+                        2005-2010
+                    </p>
+                </section>
+                <section>
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>HTML 5</li>
+                        <li>CSS 3</li>
+                        <li>Git</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Russian: native</li>
+                        <li>English: A2</li>
+                        <li>Polish: A2</li>
+                    </ul>
+                </section>
+            </aside>
+            <div>
+                <section>
+                    <h3>Sample code</h3>
+                    <pre>
                     <code>
-    function buildFibonacciSequence(quantity) {
-        if (!quantity) {
-            return '';
-        }
-        if (quantity == 1) {
-            return [0];
-        }
-        let arr = [0, 1];
-        for (let i = 2; i &lt; quantity; i++) {
-            arr[i] = arr[i - 1] + arr[i - 2];
-        };
-        return arr;
+function buildFibonacciSequence(quantity) {
+    if (!quantity) {
+        return '';
+    }
+    if (quantity == 1) {
+        return [0];
+    }
+    let arr = [0, 1];
+    for (let i = 2; i &lt; quantity; i++) {
+        arr[i] = arr[i - 1] + arr[i - 2];
     };
+    return arr;
+};
                     </code>
                 </pre>
-            </section>
+                </section>
+                <section>
+                    <h3>Self-presentation</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3EuhIuiCz4Y"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </section>
+            </div>
         </main>
         <footer class="footer">
             <p>
                 GitHub: <a href="https://github.com/darya-startsava">@darya-startsava</a>.
                 Year of creation of the profile: <time datetime="2021">2021</time>.
             </p>
-            <img src="https://rs.school/images/rs_school_js.svg" alt="logo RS School">
-            <span><a href="https://rs.school/js/">Course "JavaScript/Front-end"</a>.</span>
+
+            <a href="https://rs.school/js/">
+                <img src="https://rs.school/images/rs_school_js.svg" alt="Link to RSSchool course">
+            </a>
         </footer>
     </div>
 </body>
