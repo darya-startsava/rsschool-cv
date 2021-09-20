@@ -3,93 +3,160 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darya Startsava CV</title>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/vs.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 
 <body>
     <div class="content">
         <header class="header">
-            <img src="assets/photo.jpg" alt="My photo" class="photo">
-            <h1>DARYA STARTSAVA</h1>
-            <h2>Front-End Developer</h2>
-            <p>Location: Krakow, Poland</p>
-            <section>
-                <h3>Contact</h3>
-                <ul>
-                    <li>Discord: darya-startsava#4511</li>
-                    <li>Email: daryastartsava@gmail.com</li>
-                </ul>
-            </section>
+            <div>
+                <img src="assets/photo.jpg" alt="My photo" class="photo" id="photo">
+            </div>
+            <div class="title-text">
+                <h1>DARYA STARTSAVA</h1>
+                <h2>Front-End Developer</h2>
+                <p>Location: Krakow, Poland</p>
+                <section>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Discord: darya-startsava#4511</li>
+                        <li>Email: <a href="mailto:daryastartsava@gmail.com">daryastartsava@gmail.com</a></li>
+                    </ul>
+                </section>
+            </div>
         </header>
-        <main>
-            <section>
-                <h3>About me</h3>
-                <p>
-                    Hi, I'm Darya. I am a self-taught front-end developer.
-                    I practice writing clean and elegant code.
-                </p>
-            </section>
-            <section>
-                <h3>Education</h3>
-                <p>
-                    Rolling Scopes School<br>
-                    Course "JavaScript/Front-end"<br>
-                    2021
-                </p>
-                <p>
-                    Belarusian State University<br>
-                    Faculty of Chemistry<br>
-                    2005-2010
-                </p>
-            </section>
-            <section>
-                <h3>Skills</h3>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>HTML 5</li>
-                    <li>CSS 3</li>
-                    <li>Git</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Languages</h3>
-                <ul>
-                    <li>Russian: native</li>
-                    <li>English: A2</li>
-                    <li>Polish: A2</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Sample code</h3>
-                <pre>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#photo" class="menu-item">Photo</a></li>
+                <li><a href="#about-me" class="menu-item">About me</a></li>
+                <li><a href="#education" class="menu-item">Education</a></li>
+                <li><a href="#skills" class="menu-item">Skills</a></li>
+                <li><a href="#languages" class="menu-item">Languages</a></li>
+                <li><a href="#my-projects" class="menu-item">My projects</a></li>
+                <li><a href="#sample-code" class="menu-item">Sample code</a></li>
+                <li><a href="#self-presentation" class="menu-item">Self-presentation</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <main class="main-part">
+            <aside>
+                <section>
+                    <h3 id="about-me">About me</h3>
+                    <p>
+                        Hi, I'm Darya.<br>
+                        I am a self-taught front-end developer.<br>
+                        I practice writing clean and elegant code.
+                    </p>
+                </section>
+                <section>
+                    <h3 id="education">Education</h3>
+                    <p>
+                        Rolling Scopes School<br>
+                        Course "JavaScript/Front-end"<br>
+                        2021
+                    </p>
+                    <p>
+                        Belarusian State University<br>
+                        Faculty of Chemistry<br>
+                        2005-2010
+                    </p>
+                </section>
+                <section>
+                    <h3 id="skills">Skills</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>HTML 5</li>
+                        <li>CSS 3</li>
+                        <li>Git</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 id="languages">Languages</h3>
+                    <ul>
+                        <li>Russian: native</li>
+                        <li>English: A2</li>
+                        <li>Polish: A2</li>
+                    </ul>
+                </section>
+            </aside>
+            <div class="main-right">
+                <section>
+                    <h3 id="my-projects">My projects</h3>
+                    <div class="projects">
+                        <div class="project">
+                            <a href="https://rolling-scopes-school.github.io/darya-startsava-JSFEPRESCHOOL/vertical-slider/"
+                                target="_blank">
+                                <img src="assets/project-vertical-slider.png" alt="Vertical Slider"
+                                    class="photo-project">
+                            </a>
+                            <h4> Vertical Slider</h4>
+                            <p class="project-description"> Vertical double infinite slider.<br>
+                                Used: HTML, CSS,
+                                JavaScript.</p>
+                        </div>
+                        <div class="project">
+                            <a href="https://rolling-scopes-school.github.io/darya-startsava-JSFEPRESCHOOL/photofilter/"
+                                target="_blank">
+                                <img src="assets/project-photofilter.png" alt="Photofilter" class="photo-project">
+                            </a>
+                            <h4> Photofilter</h4>
+                            <p class="project-description">Photo filter with presets<br>
+                                and the ability to upload photos.<br>
+                                Used: HTML, CSS, JavaScript.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3 id="sample-code">Sample code</h3>
+                    <pre>
                     <code>
-    function buildFibonacciSequence(quantity) {
-        if (!quantity) {
-            return '';
-        }
-        if (quantity == 1) {
-            return [0];
-        }
-        let arr = [0, 1];
-        for (let i = 2; i &lt; quantity; i++) {
-            arr[i] = arr[i - 1] + arr[i - 2];
-        };
-        return arr;
+function buildFibonacciSequence(quantity) {
+    if (!quantity) {
+        return '';
+    }
+    if (quantity == 1) {
+        return [0];
+    }
+    let arr = [0, 1];
+    for (let i = 2; i &lt; quantity; i++) {
+        arr[i] = arr[i - 1] + arr[i - 2];
     };
+    return arr;
+};
                     </code>
                 </pre>
-            </section>
+                </section>
+                <section>
+                    <h3 id="self-presentation">Self-presentation</h3>
+                    <iframe height="315" src="https://www.youtube.com/embed/3EuhIuiCz4Y"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="video"></iframe>
+                </section>
+            </div>
         </main>
         <footer class="footer">
             <p>
                 GitHub: <a href="https://github.com/darya-startsava">@darya-startsava</a>.
                 Year of creation of the profile: <time datetime="2021">2021</time>.
             </p>
-            <img src="https://rs.school/images/rs_school_js.svg" alt="logo RS School">
-            <span><a href="https://rs.school/js/">Course "JavaScript/Front-end"</a>.</span>
+
+            <a href="https://rs.school/js/">
+                <img src="https://rs.school/images/rs_school_js.svg" alt="Link to RSSchool course">
+            </a>
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
