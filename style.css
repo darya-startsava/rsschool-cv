@@ -6,6 +6,10 @@
     flex-direction: row;
   }
 
+  nav {
+    display: none;
+  }
+
   .main-part aside {
     flex-basis: 40%;
   }
@@ -16,10 +20,6 @@
 
   .photo {
     width: 200px;
-  }
-
-  .photo-project {
-    width: 300px;
   }
 
   code {
@@ -34,20 +34,54 @@
     font-size: 2em;
   }
 
-  .photo {
-    width: 300px;
+  nav {
+    display: block;
   }
 
-  .projects {
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 0.1rem;
     flex-direction: column;
+    background-color: #e5e5e5;
+    width: 28%;
+    border-radius: 5px;
+    font-size: 1.8em;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  li:active,
+  li:hover {
+    background-color: #fca311;
+    color: #14213d;
+  }
+
+  .hamburger {
+    position: fixed;
+    right: 1%;
+    top: 2rem;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #14213d;
+  }
+
+  .photo {
+    width: 300px;
+    padding-top: 10px;
   }
 
   .project {
     margin: auto;
-  }
-
-  .photo-project {
-    width: 500px;
   }
 
   code {
@@ -61,6 +95,8 @@
 
 html {
   font-family: Roboto, sans-serif;
+  color: #14213d;
+  scroll-behavior: smooth;
 }
 
 .photo {
@@ -81,6 +117,43 @@ html {
   align-items: center;
   padding: 0 10px;
   margin: -1px;
+}
+
+a {
+  color: #14213d;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+div nav {
+  overflow-x: hidden;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .title-text {
@@ -106,18 +179,26 @@ pre {
 
 .projects {
   display: flex;
+  flex-direction: column;
 }
 
 .project {
   padding: 5px;
 }
 
-h4 {
+.photo-project {
+  width: 100%;
+}
+
+h4,
+.project-description {
   text-align: center;
   margin: 2px 0 0 0;
 }
-.project-description {
-    margin: 2px 0 0 0;
+
+.video {
+  display: block;
+  margin: 0 auto;
 }
 
 .footer {
