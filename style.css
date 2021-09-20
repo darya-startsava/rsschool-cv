@@ -246,3 +246,6 @@ footer img {
   width: 50px;
 }
 
+iframe {
+  width: 100%;
+}
