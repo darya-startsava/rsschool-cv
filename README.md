@@ -1,1 +1,1 @@
-Deploy: https://darya-startsava.github.io/rsschool-cv
+Deploy: https://darya-startsava.github.io/rsschool-cv/cv
